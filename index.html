@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Advanced Portfolio!</h1>
+        <p>Discover my journey into web development.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Anna, and I'm diving deep into HTML, CSS, and JavaScript.</p>
+        <p>My hobbies include:</p>
+        <ul>
+            <li>Coding</li>
+            <li>Experimenting with animations</li>
+            <li>Annoying my husband (expert-level!)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I’ve worked on:</p>
+        <div class="gallery">
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="POST" onsubmit="return validateForm()">
+            <div class="form-control">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <small class="error">Name is required.</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <small class="error">Valid email is required.</small>
+            </div>
+            <input type="submit" value="Send">
+        </form>
+        <p>You can also find me on:</p>
+        <a href="https://twitter.com" target="_blank">Twitter</a> | 
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </section>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio | Crafted with precision and love.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
